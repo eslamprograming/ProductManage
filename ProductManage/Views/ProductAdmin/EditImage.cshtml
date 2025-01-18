@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Update Product Image";
+}
+
+<h2>Update Image</h2>
+
+<hr />
+
+<form asp-action="EditImage" asp-route-id="@ViewBag.Id" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="ImageFile">Choose a new image:</label>
+        <input type="file" id="ImageFile" name="ImageFile" class="form-control" accept="image/*" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Update Image</button>
+</form>

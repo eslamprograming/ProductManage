@@ -1,0 +1,31 @@
+﻿@model DAL.Entities.Product
+@{
+    ViewBag.Title = "Product Details";
+}
+
+<h2>Details</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Name</th>
+        <td>@Model.Name</td>
+    </tr>
+    
+    <tr>
+        <th>Creation Date</th>
+        <td>@Model.CreationDate.ToString("yyyy-MM-dd")</td>
+    </tr>
+    <tr>
+        <th>Start Date</th>
+        <td>@Model.StartDate.ToString("yyyy-MM-dd")</td>
+    </tr>
+    <tr>
+        <th>Duration</th>
+        <td>@Model.Duration</td>
+    </tr>
+    <tr>
+        <th>Price</th>
+        <td>@Model.Price</td>
+    </tr>
+</table>
+<a asp-action="Index" class="btn btn-primary">Back</a>
