@@ -15,8 +15,6 @@ namespace DAL.ModelsVM.ProductVM
         [Required(ErrorMessage ="Enter product Name")]
         [MinLength(3,ErrorMessage ="Name more than 3 char")]
         public string Name { get; set; } // اسم المنتج
-        //public DateTime CreationDate { get; set; } // تاريخ إنشاء المنتج
-        //public string CreatedByUserId { get; set; } // معرف المستخدم الذي أنشأ المنتج
         [Required(ErrorMessage ="Enter the start Date")]
         [DataType(DataType.Date)]
         public DateTime StartDate { get; set; } // تاريخ بداية ظهور المنتج
@@ -28,6 +26,5 @@ namespace DAL.ModelsVM.ProductVM
         public IFormFile Image { get; set; }
         [Required(ErrorMessage ="Enter your Category")]
         public int CategoryId { get; set; }
-        //public Category Category { get; set; }
     }
 }
